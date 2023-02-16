@@ -1,4 +1,4 @@
-<# Clone GPOs from one domain to another. #>
+<# Clone GPOs from one domain to another. This does the export part. #>
 
 param(
     [string]$ExportDir="gpo"

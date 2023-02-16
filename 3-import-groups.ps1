@@ -2,7 +2,7 @@
 #>
 
 param(
-    [string]$ExportFileGroups="groups-custom.json",
+    [string]$ExportFileGroups="groups.json",
 
     [string]$SourceDN="DC=ad,DC=contoso,DC=com",
     [string]$TargetDN="DC=tstad,DC=contoso,DC=com"

@@ -7,8 +7,8 @@ Run the import scripts in numerical order on the target domain.
 
 This tool exports and imports the following:
 - Organizational Units
-- User accounts
-- Computer accounts
+- User accounts (all get disabled)
+- Computer accounts (all get disabled)
 - Security Groups with membership
 - Group Policy Objects
   - Settings

@@ -1,4 +1,4 @@
-<# Use ldifde to clone WMI filters from one domain to another. #>
+<# Use ldifde to clone WMI filters from one domain to another. This does the export part. #>
 
 param(
     [string]$ExportFile="wmi.txt",

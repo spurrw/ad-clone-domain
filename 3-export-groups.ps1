@@ -4,7 +4,7 @@
 
 
 param(
-    [string]$ExportFileGroups="groups-custom.json"
+    [string]$ExportFileGroups="groups.json"
 )
 
 # export groups without members

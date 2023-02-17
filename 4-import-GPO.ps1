@@ -82,12 +82,12 @@ ForEach ($gpo in Get-ChildItem $BackupDIR) {
     ForEach ($link in $links) {
         # create OU DN from SOMPath string
         $pathParts = $link.SOMPath.Split("/")
-        $OU = "DC=tstad,DC=uni,DC=edu"
+        $OU = "DC=tstad,DC=contoso,DC=com"
         For ($x = 1; $x -lt $pathParts.Length; $x += 1) {
             $OU = "OU=" + $pathParts[$x] + "," + $OU
         }
         # link enabled or not?
-        $enabled = If ($link.Enabled) {"Yes"} Else {"No"}
+        $enabled = If ($link.Enabled -eq "true" -or $link.Enabled -eq $true) {"Yes"} Else {"No"}
 
         # create OU link
         Write-Host "  Linking GPO $name to $OU. Enabled? $enabled"
